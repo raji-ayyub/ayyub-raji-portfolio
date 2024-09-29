@@ -1,5 +1,5 @@
 
-import styles from './animations/components.module.css'
+import styles from '@/app/components/animations/components.module.css'
 import Image from 'next/image'
 import frameA from '@/public/images/A.jpg'
 import frameB  from '@/public/images/U.jpg'

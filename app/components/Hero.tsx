@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './animations/components.module.css'
+import styles from '@/app/components/animations/components.module.css'
 import Image from 'next/image'
 import nextimg from '@/public/images/next.jpg'
 import reactimg from '@/public/images/react.jpg'

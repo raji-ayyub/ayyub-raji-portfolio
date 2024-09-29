@@ -1,4 +1,4 @@
-import styles from './animations/components.module.css'
+import styles from '@/app/components/animations/components.module.css'
 import Scroll from './scroller/Scroll'
 function About() {
   return (

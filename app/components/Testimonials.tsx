@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './animations/components.module.css'
+import styles from '@/app/components/animations/components.module.css'
 import Testimonialscroll from './scroller/Testimonialscroll'
 
 
