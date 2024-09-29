@@ -1,0 +1,33 @@
+/* components/components.module.css */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+    
+  }
+
+  .bgBlur{
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 1px solid white;
+    backdrop-filter: blur(4px);
+  }
+
+ 
+
+  .rotD{
+    animation: rotD 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      
+
+    }
+    to {
+      opacity: 1;
+     
+    }
+  }
+
+
+
+  
