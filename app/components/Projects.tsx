@@ -9,28 +9,25 @@ import frameF  from '@/public/images/J.jpg'
 import frameG  from '@/public/images/proj.jpg'
 import frameH  from '@/public/images/L.jpg'
 
+import { FaArrowRight } from 'react-icons/fa'
 
+import '../styles/globals.css'
 
 const Projects = () => {
 
   const details = [
     {
       id: 1,
-      image: '/images/A.jpg',
-      name: 'Poiselar Concepts',
-      descr: 'Landing page',
+      image: '/images/J.jpg',
+      name: 'Jumia Clone',
+      descr: 'E-commerce Landing page - [On going]',
       l1: 'html',
       l2: 'CSS',
       l3: 'javaScript',
       l4: 'PHP',
       l5: 'SQL',
-      fr1: 'ReactJs',
-      fr2: 'NextJs',
-      fr3: 'TailwindCss',
-      oth1: 'Bootstrap',
-      db1: 'firebase',
-      db2: 'MongoDB',
-      link: 'https://homeb.netlify.app'
+   
+      link: 'https://juumia-clone.netlify.app'
       
 
     },
@@ -39,19 +36,14 @@ const Projects = () => {
       id: 2,
       image: '/images/U.jpg',
       name: 'Youtube Clone',
-      descr: 'Youtube webapp cloned, UI and functionality',
+      descr: 'Youtube API ',
       l1: 'html',
       l2: 'CSS',
       l3: 'javaScript',
       l4: 'PHP',
       l5: 'SQL',
-      fr1: 'ReactJs',
-      fr2: 'NextJs',
-      fr3: 'TailwindCss',
-      oth1: 'Bootstrap',
-      db1: 'firebase',
-      db2: 'MongoDB',
-      link: 'https://homeb.netlify.app'
+     
+      link: 'https://uutubes.netlify.app'
       
 
     },
@@ -65,23 +57,22 @@ const Projects = () => {
       l2: 'CSS',
       l3: 'javaScript',
       l4: 'PHP',
-      l5: 'SQL',
+      
       fr1: 'ReactJs',
       fr2: 'NextJs',
       fr3: 'TailwindCss',
       oth1: 'Bootstrap',
       db1: 'firebase',
       db2: 'MongoDB',
-      link: 'https://homeb.netlify.app'
+      link: 'https://vastcreation.tech'
       
-
     },
 
     {
       id: 4,
       image: '/images/P.jpg',
       name: 'Studio 4.5',
-      descr: 'Photography Landing Page',
+      descr: 'Photography Landing Page - [On going]',
       l1: 'html',
       l2: 'CSS',
       l3: 'javaScript',
@@ -93,7 +84,7 @@ const Projects = () => {
       oth1: 'Bootstrap',
       db1: 'firebase',
       db2: 'MongoDB',
-      link: 'https://homeb.netlify.app'
+      link: 'https://yzweb.netlify.app'
       
 
     },
@@ -102,7 +93,7 @@ const Projects = () => {
       id: 5,
       image: '/images/LU.jpg',
       name: 'Poiselar Concepts',
-      descr: 'some random texts here',
+      descr: '[Unfinished]',
       l1: 'html',
       l2: 'CSS',
       l3: 'javaScript',
@@ -114,30 +105,24 @@ const Projects = () => {
       oth1: 'Bootstrap',
       db1: 'firebase',
       db2: 'MongoDB',
-      link: 'https://homeb.netlify.app'
+      link: 'https://xyweb.netlify.app'
       
 
     },
   ]
   return (
-    <div className={`  relative w-full  px-8  md:px-[12rem] pb-[4rem]  `}>
+    <div id='works' className={`  relative w-full  px-4  md:px-[12rem] pb-[4rem]  `}>
       
-        <div className='hidden md:flex z-0 flex-row justiify-between w-full h-full absolute overflow-hidden top-0 left-0'>
-          <div className='  bg-gray-200 opacity-[0.2]   border-r-[2px] border-white   ml-[-10rem] w-[20rem]'></div>
+        
 
-          <div className='  ml-auto  bg-gray-200 opacity-[0.2] border-l-[2px] border-white  mr-[-10rem] w-[20rem]'></div>
-        </div>
-
-        <div className='lg:w-[50rem] mb-[4rem] text-center w-[100%] mt-[4rem] text-gray-700 mx-auto'>
-            <h2 className='font-bold text-[1.2rem] md:text-[2.5rem]  transition-2s  text-center' >
+        <div className='lg:w-[50rem] mb-[4rem] text-left md:text-center w-[100%] mt-[4rem]  mx-auto'>
+            <h2 className='font-bold text-[2.5rem] md:text-[2.5rem] text-blue-200  transition-2s' >
                 My Works 
             </h2>
-            <p className='text-xs md:text-sm mt-4'>A few selection of my works</p>
+            <p className='text-md  md:text-sm text-blue-600 font-boled mt-0 md:mt-2'>A few selection of my works</p>
         </div>
 
-
-
-        <div className='  flex flex-wrap   mb-[2rem] items-center justify-center md:justify-start  mx-auto gap-4  w-full    z-20 '>
+        <div className='  flex flex-wrap   mb-[2rem] items-center justify-center md:justify-start  mx-auto gap-4  w-full    z-40 '>
           
           
           
@@ -160,16 +145,24 @@ const Projects = () => {
 
                 <div className='mb-2 ml-2 mb-4 '>
                   <h2 className='text-sm mb-2 font-bold text-gray-600'>Technologies</h2>
-                  <a>{detail.l1}</a><a className='mx-2'>{detail.l2}</a><a>{detail.l3}</a>
+                  <a>{detail.l1}</a><a className='mx-2'>{detail.l2}</a><a>{detail.l3}</a> <a className='ml-2'>{detail.fr1}</a>
                 </div>
-                <a href={detail.link}>
+                <a className='cursor-pointer' href={detail.link}>
                   <button className='p-1 border border-blue-600 rounded text-blue-900 ml-2 px-2 '>Visit live link</button>
 
                 </a>
               </div>
 
             </div>
+
+            
+
+
           ))}
+
+          <div className='w-full md:w-[30%] h-[22.8rem] border border-blue-300 ml-0 md:ml-2 mt-8 rounded-xl flex items-center justify-center' >
+              <a className='w-[6rem] h-[6rem] rounded-full border border-blue-300 flex text-blue-500  items-center flex-col justify-center '> <p className='text-xs'>See more</p> <FaArrowRight /> </a>
+          </div>
 
 
 

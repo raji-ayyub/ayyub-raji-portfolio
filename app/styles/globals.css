@@ -16,7 +16,13 @@ body{
     backdrop-filter: blur(5px);
    
 }
-
+.bg-grad{
+    background: linear-gradient(
+        45deg,
+        rgb(0, 53, 197),
+        rgb(3, 53, 219)
+    );
+}
 /* TEXT ANIMATION */
 @keyframes typing {
     from { width: 0; }

@@ -18,7 +18,7 @@ const Hero = () => {
           <div className=' top-0 ml-auto h-full bg-gray-200 opacity-[0.2] border-l-[2px] border-white rounded-b  rounded-[40%] mr-[-10rem] w-[20rem]'></div>
       </div>
 
-      <div className={` px-6 md:px-8  py-[3rem] w-full md:h-[100vh] relative `}>
+      <div className={` px-4 md:px-8  py-[3rem] w-full md:h-[100vh] relative `}>
       
 
       
@@ -28,7 +28,7 @@ const Hero = () => {
 
 
 
-        <div className='w-full lg:w-[50rem] text-left md:text-center w-[100%] mt-[4rem]  text-gray-700 mx-auto'>
+        <div className='w-full lg:w-[50rem] text-left md:text-center  mt-[4rem]  text-gray-700 mx-auto'>
             <h2 className='font-bold text-[1.3rem] md:text-[2rem] mt-[6rem] md:mt-0 transition-2s ' >
                 Transforming Concepts into <br className='hidden md:flex' /> Seamless  <span className='text-blue-800 text-gradient'>User Experiences</span>
             </h2>
@@ -51,8 +51,8 @@ const Hero = () => {
 
         <div className='  flex flex-col md:flex-row  h-auto mx-auto gap-10 w-full justify-center mt-[4rem] '>
           
-          <div className='left-card hidden   rounded-[2rem] md:flex items-center justify-center h-[12.8rem] w-[15.2rem]  bg-white'>
-            <div className='card w-[15rem] h-[12.6rem]  rounded-[1.9rem] bg-[#FAFAFA]   '>
+          <div className='left-card hidden   rounded-[2rem] md:flex items-center justify-center h-[12.8rem] w-[14rem] md:w-[15.2rem]  bg-white'>
+            <div className='card w-[14.2rem] md:w-[15rem] h-[12.6rem]  rounded-[1.9rem] bg-[#FAFAFA]   '>
               <p className='text-[8px] bg-gray-200 w-[6rem] text-center  text-gray-500 py-1 font-bold ml-4 mb-1 mt-4 rounded-full  '>Front-end Developer</p>
               <h2 className='font-bold text-lg text-gray-500 ml-5 mb-1'>Ayyub Raji</h2>
               

@@ -7,7 +7,7 @@ const Brands: React.FC = () => {
 
     
   return (
-    <div className={` relative w-full transition  px-4 md:px-[12rem] py-[6rem]  `}>
+    <div className={` relative w-full transition  px-2 md:px-[10rem] py-[6rem]  `}>
 
 
       <div className='hidden md:flex  flex-row justiify-between w-full h-full absolute z-0 overflow-hidden top-0 left-0'>
@@ -17,11 +17,11 @@ const Brands: React.FC = () => {
       </div>
 
 
-      <div className='lg:w-[50rem] mb-[4rem] text-center w-[100%] mt-[4rem] text-gray-700 z-20 mx-auto'>
-            <h2 className='font-bold text-[1.2rem] md:text-[2.5rem]  transition-2s  text-center' >
-                Brands 
+      <div className='lg:w-[50rem] mb-[4rem] text-left md:text-center w-[95%] mt-[4rem]  mx-auto'>
+            <h2 className='font-bold text-[2.5rem] md:text-[2.5rem] text-blue-200  transition-2s' >
+                Brands
             </h2>
-            <p className='text-xs md:text-sm mt-4'> I have worked with</p>
+            <p className='text-md  md:text-sm text-blue-600 font-boled mt-0 md:mt-2'>{ `I've Worked With` }</p>
       </div>
 
 

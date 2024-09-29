@@ -7,7 +7,7 @@ import '../styles/globals.css'
 
 function About() {
   return (
-    <div className={`relative w-full transition  px-4 md:px-[12rem] py-[6rem]  `}>
+    <div id='about' className={`relative w-full transition  px-4 md:px-[12rem] py-[6rem]  `}>
 
 
       <div className='hidden md:flex  flex-row justiify-between w-full h-full absolute overflow-hidden top-0 left-0'>
@@ -52,14 +52,14 @@ function About() {
 
 
               <div className={`w-[45%] md:w-[48%] h-full  justify-end flex flex-wrap gap-2`}>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-white  text-[9px] md:text-xs font-bold bg-cyan-800`} >React.js</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >Next Js</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >Tailwind css</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >Bootstrap</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >Git</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >Github</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >Fire base</button>
-                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100`} >react</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-white  text-[9px] md:text-xs font-bold bg-blue-600`} >Next Js</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500`} >React.js</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500 `} >Tailwind css</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500`} >Bootstrap</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500`} >Git</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500`} >Github</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500`} >Fire base</button>
+                <button className={`w-[4rem] md:w-[5rem] h-8 rounded flex items-center justify-center text-[9px] md:text-xs font-bold bg-blue-100 hover:bg-blue-600 hover:text-white transition-all ease-in-out duration-500`} >react</button>
 
               </div>
 
@@ -93,7 +93,7 @@ function About() {
              
               <div className={`w-full  h-full flex flex-col rounded-lg bg-blur`}>
                 <h4 className='text-lg font bold text-blue-900 font-bold text-left  mt-4 ml-2'>Do you want to start a project together?</h4>
-                <a  href='mailto:ayyubraji86@gmail.com' className='text-lg  mt-6 w-[7rem] text-center rounded px-2 py-2 font-bold text-blue-900 border border-blue-500 hover:border-blue-200 transition-all ease-in-out duration-500 flex items-center justify-center gap-2 '>Email <FaEnvelope /></a>
+                <a  href='mailto:ayyubraji86@gmail.com' className='text-sm  mt-6 w-[6rem] text-center rounded px-0 py-1 font-bold text-blue-900 border border-blue-500 hover:border-blue-200 transition-all ease-in-out duration-500 flex items-center justify-center gap-3 ml-2'>Email <FaEnvelope /></a>
               </div>
 
             </div>
