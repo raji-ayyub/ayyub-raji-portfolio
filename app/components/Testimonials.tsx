@@ -27,7 +27,7 @@ const Testimonials: React.FC = () => {
   // };
     
   return (
-    <div className={` ${styles.fadeIn} relative w-full transition  px-4 md:px-[12rem] py-[6rem]  `}>
+    <div className={`  relative w-full transition  px-4 md:px-[12rem] py-[6rem]  `}>
 
 
       <div className='hidden md:flex  flex-row justiify-between w-full h-full absolute z-0 overflow-hidden top-0 left-0'>

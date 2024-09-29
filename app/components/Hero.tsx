@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '@/app/components/animations/components.module.css'
 import Image from 'next/image'
 import nextimg from '@/public/images/next.jpg'
 import reactimg from '@/public/images/react.jpg'
@@ -19,7 +18,7 @@ const Hero = () => {
           <div className=' top-0 ml-auto h-full bg-gray-200 opacity-[0.2] border-l-[2px] border-white rounded-b  rounded-[40%] mr-[-10rem] w-[20rem]'></div>
       </div>
 
-      <div className={`${styles.fadeIn }  px-4 md:px-8  py-[3rem] w-full md:h-[100vh] relative `}>
+      <div className={` px-4 md:px-8  py-[3rem] w-full md:h-[100vh] relative `}>
       
 
       

@@ -1,5 +1,4 @@
 
-import styles from '@/app/components/animations/components.module.css'
 import Image from 'next/image'
 import frameA from '@/public/images/A.jpg'
 import frameB  from '@/public/images/U.jpg'
@@ -121,7 +120,7 @@ const Projects = () => {
     },
   ]
   return (
-    <div className={`${styles.fadeIn }  relative w-full  px-8  md:px-[12rem] pb-[4rem]  `}>
+    <div className={`  relative w-full  px-8  md:px-[12rem] pb-[4rem]  `}>
       
         <div className='hidden md:flex z-0 flex-row justiify-between w-full h-full absolute overflow-hidden top-0 left-0'>
           <div className='  bg-gray-200 opacity-[0.2]   border-r-[2px] border-white   ml-[-10rem] w-[20rem]'></div>

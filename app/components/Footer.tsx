@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './animations/components.module.css'
 
 import { FaHome } from 'react-icons/fa'
 import { FaDiscord } from 'react-icons/fa'
@@ -13,7 +12,7 @@ const Footer: React.FC = () => {
 
     
   return (
-    <div className={` ${styles.fadeIn} relative w-full  text-gray-600 transition  px-4 md:px-[12rem] py-[6rem] bg-gray-200 `}>
+    <div className={`  relative w-full  text-gray-600 transition  px-4 md:px-[12rem] py-[6rem] bg-gray-200 `}>
 
 
       <div className='hidden md:hidden  flex-row justiify-between w-full h-full absolute z-10 overflow-hidden top-0 left-0'>
