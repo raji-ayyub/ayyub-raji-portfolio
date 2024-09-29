@@ -18,7 +18,7 @@ const Hero = () => {
           <div className=' top-0 ml-auto h-full bg-gray-200 opacity-[0.2] border-l-[2px] border-white rounded-b  rounded-[40%] mr-[-10rem] w-[20rem]'></div>
       </div>
 
-      <div className={` px-4 md:px-8  py-[3rem] w-full md:h-[100vh] relative `}>
+      <div className={` px-6 md:px-8  py-[3rem] w-full md:h-[100vh] relative `}>
       
 
       
@@ -29,7 +29,7 @@ const Hero = () => {
 
 
         <div className='w-full lg:w-[50rem] text-left md:text-center w-[100%] mt-[4rem]  text-gray-700 mx-auto'>
-            <h2 className='font-bold text-[1.3rem] md:text-[2rem]  transition-2s ' >
+            <h2 className='font-bold text-[1.3rem] md:text-[2rem] mt-[6rem] md:mt-0 transition-2s ' >
                 Transforming Concepts into <br className='hidden md:flex' /> Seamless  <span className='text-blue-800 text-gradient'>User Experiences</span>
             </h2>
 

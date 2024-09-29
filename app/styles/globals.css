@@ -6,7 +6,16 @@ body{
     background-color: rgb(236, 245, 255);
 }
 
-
+.bg-blur{
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.568),
+        rgba(255, 255, 255, 0.205)
+    );
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+   
+}
 
 /* TEXT ANIMATION */
 @keyframes typing {
@@ -50,7 +59,7 @@ body{
 
   
   .text-shadow-lg {
-    text-shadow: 1px 1px 4px rgba(49, 18, 221, 0.486);
+    text-shadow: 1px 1px 4px rgba(2, 67, 206, 0.486);
   }
   
   
