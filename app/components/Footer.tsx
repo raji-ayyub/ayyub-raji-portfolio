@@ -64,7 +64,11 @@ const Footer: React.FC = () => {
                 <div className='flex text-xl text-blue-700 gap-4 mt-4'>
                     <FaDiscord />
                     <FaFacebook />
+
+                    <a href='https://www.linkedin.com/in/ayyub-raji-3314a2192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                     <FaLinkedin />
+                    </a>
+                    
                     <FaTwitter />
 
                 </div>

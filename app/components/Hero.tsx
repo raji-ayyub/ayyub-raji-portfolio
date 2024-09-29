@@ -116,7 +116,7 @@ const Hero = () => {
 
 
               <div className="relative rounded-full flex justify-center  opacity-[0.55]  shadow-2xl shadow-[#AAAAAA] bg-white top-[65%] h-[18rem] w-[110%] z-20 "></div>
-              <a className='absolute bottom-[1rem] text-center border border-blue-400 text-blue-600 text-sm flex items-center rounded-full  justify-center  h-[2.5rem] z-50 w-[40%] animate-pulse cursor-pointer hover:animate-none'>Hire Me</a>
+              <a href='https://www.linkedin.com/in/ayyub-raji-3314a2192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' className='absolute bottom-[1rem] text-center border border-blue-400 text-blue-600 text-sm flex items-center rounded-full  justify-center  h-[2.5rem] z-50 w-[40%] animate-pulse cursor-pointer hover:animate-none'>Hire Me</a>
 
 
             </div>
