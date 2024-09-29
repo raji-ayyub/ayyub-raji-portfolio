@@ -7,6 +7,8 @@ import Testimonials from "./components/Testimonials";
 import Brands from "./components/Brands";
 import Footer from "./components/Footer";
 
+import './styles/globals.css'
+
 export default function Home() {
   return (
     <main className="flex flex-col items-center ">

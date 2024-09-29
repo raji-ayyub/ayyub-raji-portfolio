@@ -2,6 +2,12 @@
 
 
 
+body{
+    background-color: rgb(236, 245, 255);
+}
+
+
+
 /* TEXT ANIMATION */
 @keyframes typing {
     from { width: 0; }
