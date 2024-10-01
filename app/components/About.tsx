@@ -93,7 +93,7 @@ function About() {
              
               <div className={`w-full  h-full flex flex-col rounded-lg bg-blur`}>
                 <h4 className='text-lg font bold text-blue-900 font-bold text-left  mt-4 ml-2'>Do you want to start a project together?</h4>
-                <a  href='mailto:ayyubraji86@gmail.com' className='text-sm  mt-6 w-[6rem] text-center rounded px-0 py-1 font-bold text-blue-900 border border-blue-500 hover:border-blue-200 transition-all ease-in-out duration-500 flex items-center justify-center gap-3 ml-2'>Email <FaEnvelope /></a>
+                <a  href='mailto:ayyubraji87@gmail.com' className='text-sm  mt-6 w-[6rem] text-center rounded px-0 py-1 font-bold text-blue-900 border border-blue-500 hover:border-blue-200 transition-all ease-in-out duration-500 flex items-center justify-center gap-3 ml-2'>Email <FaEnvelope /></a>
               </div>
 
             </div>

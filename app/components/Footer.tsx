@@ -1,4 +1,4 @@
-import React from 'react'
+'use client'
 
 import { FaHome } from 'react-icons/fa'
 import { FaDiscord } from 'react-icons/fa'
@@ -8,9 +8,54 @@ import { FaTwitter } from 'react-icons/fa'
 
 import '../styles/globals.css'
 
-const Footer: React.FC = () => {
+import { useState } from 'react';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../utils/firebase'; 
 
+  
+
+const Footer: React.FC = () => {
+  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    content: ''
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
     
+
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      // Save form data to Firestore
+      await addDoc(collection(db, 'contactMessages'), {
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        content: formData.content,
+        createdAt: new Date()
+      });
+
+      setSubmitted(true);
+    } catch (err) {
+      setError('Submission failed, please try again.');
+      console.error('Error adding document: ', err);
+    }
+  };
+
+
   return (
     <div id='contact' className={`  relative w-full  text-gray-600 transition  px-4 md:px-[12rem] py-[6rem] bg-gray-200 `}>
 
@@ -32,15 +77,58 @@ const Footer: React.FC = () => {
 
       <div className='w-full flex flex-wrap md:gap-2 md:justify-around gap-24 z-20'>
 
-        <form className='w-full md:w-[45%] flex flex-col gap-4'>
+        <form onSubmit={handleSubmit} className='w-full md:w-[45%] flex flex-col gap-4'>
 
-            <input className='pl-6 bg-white py-2 rounded-md' type="text" placeholder='Name' id="name" />
-            <input className='pl-6 bg-white py-2 rounded-md' type="email" placeholder='Email' id="email" />
-            <input className='pl-6 bg-white py-2 rounded-md' type="text" placeholder='Subject' id="subject" />
-            <textarea className='pl-6 bg-white py-2 rounded-md' placeholder='Message..' rows={5} name="message" id="message"></textarea>
+            <input className='pl-6 bg-white py-2 rounded-md' 
+              type="text" 
+              placeholder='Name'
+              id="name" 
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input className='pl-6 bg-white py-2 rounded-md' 
+              type="email" 
+              placeholder='Email' 
+              id="email" 
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <input className='pl-6 bg-white py-2 rounded-md' 
+              type="text" 
+              placeholder='Subject' 
+              id="subject" 
+              
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              required
+            />
+            <textarea className='pl-6 bg-white py-2 rounded-md' 
+              placeholder='Message..' 
+              rows={5} 
+              
+              id="message"
+              name="content"
+              value={formData.content}
+              onChange={handleChange}
+              required
+              >
+              
+
+            </textarea>
 
 
-            <input type="button" value={'Submit'} className="submit  py-4 text-white font-bold rounded-md bg-grad" />
+            <input type="submit" 
+              value={'Send message'} 
+              className="submit  py-4 text-white font-bold rounded-md bg-grad" 
+            />
+
+            {submitted && <p className='text-blue-600 text-sm'>Thank you for your message! We'll get back to you soon.</p>}
+            {error && <p className='text-red-600 text-sm'>{error}</p>}
         </form>
 
 
@@ -59,7 +147,7 @@ const Footer: React.FC = () => {
                 <p className='text-sm mb-8'>ayyubraji87@gmail.com</p>
 
                 <p className='font-bold'>Website</p>
-                <p className='text-sm mb-8'>ayyubraji.netlify.app</p>
+                <p className='text-sm mb-8'>ayyubraji.vercel.app</p>
 
                 <div className='flex text-xl text-blue-700 gap-4 mt-4'>
                     <FaDiscord />
@@ -68,7 +156,7 @@ const Footer: React.FC = () => {
                     <a href='https://www.linkedin.com/in/ayyub-raji-3314a2192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                     <FaLinkedin />
                     </a>
-                    
+
                     <FaTwitter />
 
                 </div>
