@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
 
 
   return (
-    <div id='contact' className={`  relative w-full  text-gray-600 transition  px-4 md:px-[12rem] py-[6rem] bg-gray-200 `}>
+    <div id='contact' className={`  relative w-full  text-gray-600 transition  px-4 md:px-[12rem] py-[6rem] pb-[2rem] bg-gray-200 `}>
 
 
       <div className='hidden md:hidden  flex-row justiify-between w-full h-full absolute z-10 overflow-hidden top-0 left-0'>
@@ -127,7 +127,7 @@ const Footer: React.FC = () => {
               className="submit  py-4 text-white font-bold rounded-md bg-grad" 
             />
 
-            {submitted && <p className='text-blue-600 text-sm'>Thank you for your message! We'll get back to you soon.</p>}
+            {submitted && <p className='text-blue-600 text-sm'>Thanks for your message! We will get back to you soon.</p>}
             {error && <p className='text-red-600 text-sm'>{error}</p>}
         </form>
 
