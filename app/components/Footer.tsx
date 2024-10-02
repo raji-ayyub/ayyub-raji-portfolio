@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
 
     try {
       // Save form data to Firestore
-      const docRef = await addDoc(collection(db, 'contactMessages'), {
+        await addDoc(collection(db, 'contactMessages'), {
         name: formData.name,
         email: formData.email,
         subject: formData.subject,
@@ -48,12 +48,19 @@ const Footer: React.FC = () => {
         createdAt: new Date()
       });
 
-      console.log("Document written with ID: ", docRef.id);
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        content: ''
+      });
 
       setSubmitted(true);
+
+      
     } catch (err) {
-      // setError('Submission failed, please try again.');
-      console.error('Error adding document: ', err);
+      setError('Submission failed, please try again.');
+     
     }
   };
 
