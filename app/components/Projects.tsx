@@ -16,6 +16,24 @@ import '../styles/globals.css'
 const Projects = () => {
 
   const details = [
+
+    {
+      id: 1,
+      image: '/images/link.PNG',
+      name: 'link Sharing App',
+      descr: 'NEXT JS project for connecting developers [On going]',
+     
+      l3: 'javaScript',
+      
+      fr1: 'ReactJs',
+      fr2: 'NextJs',
+      fr3: 'TailwindCss',
+      db1: 'firebase',
+      link: 'https://w-link.netlify.app'
+      
+
+    },
+
     {
       id: 1,
       image: '/images/J.jpg',
@@ -145,7 +163,12 @@ const Projects = () => {
 
                 <div className='mb-2 ml-2 mb-4 '>
                   <h2 className='text-sm mb-2 font-bold text-gray-600'>Technologies</h2>
-                  <a>{detail.l1}</a><a className='mx-2'>{detail.l2}</a><a>{detail.l3}</a> <a className='ml-2'>{detail.fr1}</a>
+                  <a>{detail.l1}</a>
+                  <a className='ml-2'>{detail.l2}</a>
+                  <a className='ml-2'>{detail.l3}</a>
+                  <a className='ml-2'>{detail.fr1}</a>
+                  <a className='ml-2'>{detail.fr2}</a>
+                  <a className='ml-2'>{detail.fr3}</a>
                 </div>
                 <a className='cursor-pointer' href={detail.link}>
                   <button className='p-1 border border-blue-600 rounded text-blue-900 ml-2 px-2 '>Visit live link</button>
