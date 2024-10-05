@@ -29,7 +29,7 @@ const Projects = () => {
       fr2: 'NextJs',
       fr3: 'TailwindCss',
       db1: 'firebase',
-      link: 'https://w-link.netlify.app'
+      link: 'https://wlink-b5cu.vercel.app'
       
 
     },
