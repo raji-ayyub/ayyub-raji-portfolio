@@ -170,7 +170,7 @@ const Projects = () => {
                   <a className='ml-2'>{detail.fr2}</a>
                   <a className='ml-2'>{detail.fr3}</a>
                 </div>
-                <a className='cursor-pointer' href={detail.link}>
+                <a className='cursor-pointer' target='_blank' href={detail.link}>
                   <button className='p-1 border border-blue-600 rounded text-blue-900 ml-2 px-2 '>Visit live link</button>
 
                 </a>

@@ -36,7 +36,7 @@ function About() {
           <div className={`flex flex-col w-full md:w-[38%] h-[20rem] justify-between gap-2`} >
             
             <div className={`w-full h-[9rem]  rounded-2xl bg-blur`}>
-              <h4 className='text-md md:text-xl font-bold text-blue-900  mt-5 ml-2'>I am vast with frameworks, <br />as well as core Vanilla Javascript</h4>
+              <h4 className='text-md md:text-lg font-bold text-blue-900  mt-5 ml-2'>I am vast with frameworks, <br />as well as core Vanilla Javascript</h4>
             </div>
 
 
@@ -46,7 +46,7 @@ function About() {
               <div className={`w-[48%] md:w-[48%]    flex flex-col justify-center `}>
                 
                 <p className='text-sm text-gray-400 ml-2'>I constantly try to  <br />improve</p>
-                <h4 className='text-lg md:text-xl font-bold text-blue-900 ml-2'>My tech stack</h4>
+                <h4 className='text-md md:text-xl font-bold text-blue-900 ml-2'>My tech stack</h4>
               </div>
 
 
@@ -79,7 +79,7 @@ function About() {
           <div className={`flex flex-col w-full  md:w-[38%] h-[20rem] justify-between gap-2`} >
             
             <div className={`w-full h-[9rem]  rounded-2xl bg-blur`}>
-              <h4 className='text-lg md:text-xl font-bold text-blue-900  m-4 mb-2 ml-2'>All skill-set</h4>
+              <h4 className='text-md md:text-xl font-bold text-blue-900  m-4 mb-2 ml-2'>All skill-set</h4>
               
               
               
@@ -92,7 +92,7 @@ function About() {
             <div className={`w-full flex flex-col md:flex-row mb-4 md:mb-0  h-[10rem]  rounded-2xl`}>
              
               <div className={`w-full  h-full flex flex-col rounded-lg bg-blur`}>
-                <h4 className='text-lg font bold text-blue-900 font-bold text-left  mt-4 ml-2'>Do you want to start a project together?</h4>
+                <h4 className='text-md font bold text-blue-900 font-bold text-left  mt-4 ml-2'>Do you want to start a project together?</h4>
                 <a  href='mailto:ayyubraji87@gmail.com' className='text-sm  mt-6 w-[6rem] text-center rounded px-0 py-1 font-bold text-blue-900 border border-blue-500 hover:border-blue-200 transition-all ease-in-out duration-500 flex items-center justify-center gap-3 ml-2'>Email <FaEnvelope /></a>
               </div>
 

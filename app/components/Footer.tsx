@@ -1,6 +1,6 @@
 'use client'
 
-import { FaHome } from 'react-icons/fa'
+import { FaEnvelope, FaHome, FaInstagram, FaSlack } from 'react-icons/fa'
 import { FaDiscord } from 'react-icons/fa'
 import { FaLinkedin } from 'react-icons/fa'
 import { FaFacebook } from 'react-icons/fa'
@@ -159,14 +159,17 @@ const Footer: React.FC = () => {
                 <p className='text-sm mb-8'>ayyubraji.vercel.app</p>
 
                 <div className='flex text-xl text-blue-700 gap-4 mt-4'>
-                    <FaDiscord />
-                    <FaFacebook />
+                    <a href = 'mailto:ayyubraji87@gmail.com'>
+                    <FaEnvelope />
+                    </a>
+
+                    <FaInstagram />
 
                     <a href='https://www.linkedin.com/in/ayyub-raji-3314a2192?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'>
                     <FaLinkedin />
                     </a>
 
-                    <FaTwitter />
+                    
 
                 </div>
             </div>
